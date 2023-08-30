@@ -288,9 +288,9 @@ def parse_args():
 
 def main():
     args = parse_args()
+    pre_line=args.path 
     for i in range(80788):
-        line=args.path 
-        line[-5]=str(i)
+        line=pre_line+"/"+str(i)+".png"
         raster_to_json(line)
 
 
