@@ -288,8 +288,10 @@ def parse_args():
 
 def main():
     args = parse_args()
-    line=args.path 
-    raster_to_json(line)
+    for i in range(80788):
+        line=args.path 
+        line[-5]=str(i)
+        raster_to_json(line)
 
 
 if __name__ == "__main__":
