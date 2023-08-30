@@ -10,7 +10,7 @@ Project [website](https://ennauata.github.io/houseganpp/page.html).
 
 Input Data
 ------
-![alt text](https://github.com/sepidsh/Housegan-data-reader/blob/main/image/0.jpg "Sample")
+![alt text](https://github.com/motoki-sato627/Housegan-data-reader/blob/main/image/0.jpg "Sample")
 <br/>
 Data: [RPLAN dataset](http://staff.ustc.edu.cn/~fuxm/projects/DeepLayout/index.html), which offers 60k vector-graphics floorplans designed by professional architects. 
 <br/>
@@ -30,7 +30,7 @@ pip install descartes
 How to run
 ------
   
-```python rasetr_to_json.py --path #rplan_dataset/#image_number.png```
+```python raster_to_json.py --path /Users/satomotoki/Desktop/dataset/floorplan_dataset/n.png```
 
 Output data format
 ------
