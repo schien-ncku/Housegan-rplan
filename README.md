@@ -30,7 +30,7 @@ pip install descartes
 How to run
 ------
   
-```python raster_to_json.py --path ~/Desktop/dataset/floorplan_dataset/n.png```
+```python raster_to_json.py --path ~/Desktop/dataset/floorplan_dataset```
 
 Output data format
 ------
