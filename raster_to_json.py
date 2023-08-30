@@ -11,7 +11,7 @@ from misc.figures import plot_coords
 from misc.colors import colormap_255, semantics_cmap
 
 
-def raster_to_json(line, n):
+def raster_to_json(line, num):
     """ convert extracted data from rasters to housegan ++ data format :  extract rooms type, bbox, doors, edges and neigbour rooms
                 
     """
@@ -273,7 +273,7 @@ def raster_to_json(line, n):
    
   
     ### saving json files
-    with open("/Users/satomotoki/Desktop/datasets/rplan/"+str(n)+".json","w") as f:
+    with open("/Users/satomotoki/Desktop/datasets/rplan/"+num+".json","w") as f:
          json.dump(info, f)
 
 
@@ -290,8 +290,9 @@ def main():
     args = parse_args()
     pre_line=args.path 
     for i in range(50):
-        line=pre_line+"/"+str(i)+".png"
-        raster_to_json(line, i)
+        num=str(i)
+        line=pre_line+"/"+num+".png"
+        raster_to_json(line, num)
 
 
 if __name__ == "__main__":
