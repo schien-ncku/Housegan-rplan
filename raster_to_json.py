@@ -273,7 +273,7 @@ def raster_to_json(line, num):
    
   
     ### saving json files
-    with open("/datasets/rplan/"+num+".json","w") as f:
+    with open("./sample_output/rplan/"+num+".json","w") as f:
          json.dump(info, f)
 
 
